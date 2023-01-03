@@ -1,4 +1,4 @@
-VERSION='0.0.1'
+VERSION='0.0.3'
 cp ../schemas/bellingcatcat.json ./
-docker build . -t equill/bellingcatcat:$VERSION -t equill/bellingcatcat:latest
+docker build . -t equill/bellingcatcat:$VERSION
 rm bellingcatcat.json

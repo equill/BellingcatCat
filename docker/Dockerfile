@@ -1,2 +1,2 @@
-FROM equill/restagraph:0.8.7a1
+FROM equill/restagraph:0.9.4a5
 COPY bellingcatcat.json /schemas/bellingcatcat.json
