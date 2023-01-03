@@ -67,18 +67,12 @@
     {
       "name": "Books",
       "dependent": false,
-      "notes": "Stuff printed on the corpses of trees.",
+      "notes": "Stuff printed on the flayed corpses of trees.",
       "attributes": [
         {
           "name": "description",
           "description": "",
           "type": "text"
-        },
-        {
-          "name": "ISBN",
-          "description": "International Standard Book Number. Should be a 10- or 13-digit number. Deprecated; use either ISBN10 or ISBN13",
-          "type": "varchar",
-          "maxlength": 17
         },
         {
           "name": "ISBN10",
