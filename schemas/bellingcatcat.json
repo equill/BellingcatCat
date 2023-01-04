@@ -1498,7 +1498,7 @@
       "name": "MEMBER_OF",
       "target-type": "Organisations",
       "cardinality": "many:1",
-      "reltype": "dependent",
+      "reltype": "any",
       "notes": "This team is a member of that organisation."
     },
     {
@@ -1513,7 +1513,7 @@
       "source-type": "Teams",
       "name": "HAS_SUBTEAM",
       "target-type": "Teams",
-      "cardinality": "many:many",
+      "cardinality": "1:many",
       "reltype": "dependent",
       "notes": "That team is a subteam of this one, and possibly of others."
     },
