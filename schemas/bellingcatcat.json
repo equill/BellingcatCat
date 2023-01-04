@@ -440,6 +440,12 @@
     {
       "source-type": "Applications",
       "name": "DOCUMENTED_BY",
+      "target-type": "Howtos",
+      "notes": "Some aspect of this application is documented by that HOWTO."
+    },
+    {
+      "source-type": "Applications",
+      "name": "DOCUMENTED_BY",
       "target-type": "Wikipages",
       "cardinality": "1:many",
       "reltype": "any",
@@ -812,6 +818,18 @@
       "cardinality": "many:many",
       "reltype": "any",
       "notes": "That investigation made some reference to this file."
+    },
+    {
+      "source-type": "Howtos",
+      "name": "DOCUMENTS",
+      "target-type": "Applications",
+      "notes": "This HOWTO documents some aspect of that application."
+    },
+    {
+      "source-type": "Howtos",
+      "name": "RELATES_TO",
+      "target-type": "Howtos",
+      "notes": "These HOWTOs are related."
     },
     {
       "source-type": "Investigations",
