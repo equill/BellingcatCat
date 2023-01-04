@@ -1,53 +1,19 @@
 # BellingcatCat
 
-## Team Members
 
-- James Fleming
-    - Github handle is [equill](https://github.com/equill/)
-    - Email address is james@electronic-quill.net
+## What
 
-
-## Tool Description
-
-`This sections discusses the purpose and motivation for the tool, and how it addresses a tool need you've identified.`
-
-Summary: what can [Restagraph](https://github.com/equill/restagraph) bring to OSINT?
+An application built on [Restagraph](https://github.com/equill/restagraph), to explore what it can bring to OSINT.
 
 There are already a couple of OSINT tools with very well-polished GUIs. However, they have a few shortcomings that the Restagraph platform can address.
 
 
 ## Installation
 
-Outside of the hackathon, I'm actually working to make this platform available as a hosted solution. However, if you're comfortable with Docker and you want your own local installation to mess with, please go ahead and let me know how you find it.
+It's designed as a Docker application, for ease of deployment.
 
-1. Ensure you have Docker installed.
-    - Make sure `docker swarm` is also active. This is necessary for `docker stack`.
-    - Make sure you know what address the Docker Bridge has on your machine. I personally use 192.0.2.1/24, because it's a safe choice, but you do you.
-2. Download `docker-compose.yml` from this repo.
-3. Edit `docker-compose.yml` to suit your environment.
-    - Change the database password.
-        - In _both_ places.
-    - It doesn't care what ports or addresses it's listening on, so change those to suit yourself.
-    - Volumes are volumes. It's easier to back them up if they're on-disk directories, though.
-4. Run it: `docker stack deploy -c docker-compose.yml bellingcatcat`
-    - It doesn't actually care what you call it, so a more sensible name is probably a good idea.
+Note that deployment and configuration start getting painful as you add authentication, because I designed the engine to scale up to handle lots of sites. The cost is that an authenticated one-off site is not straightforward to deploy.
 
-
-As pre-configured in `docker-compose.xml`, it listens on the following ports:
-
-  - Web GUI: 8086
-  - HTTP API: 5050
-  - Neo4j (HTTP): 5051
-  - Neo4j (Bolt): 5052
-
-Note: you're probably going to want to stick a web proxy in front of it, e.g. `nginx`. This isn't included in this repo, because I haven't found a practical way of providing a general-purpose config file of that kind.
-
-
-## Usage
-
-```
-This sections includes detailed instructions for using the tool. If the tool has a command-line interface, include common commands and arguments, and some examples of commands and a description of the expected output. If the tool has a graphical user interface or a browser interface, include screenshots and describe a common workflow.
-```
 
 ## Additional Information
 
@@ -71,14 +37,6 @@ It's important to be aware that almost all the work for this product is actually
     - Options available right now are fully open (anybody can do anything), write-authenticated (only logged-in users can add, change or delete things), or authenticated-only (login or bust).
         - The authenticated part is a work-in-progress. Do *not* trust it until I've tested it and confirmed it looks secure, and then preferably after you've done your own testing.
     - More finely-grained controls are on the roadmap; it's mainly a question of priorities.
-    - LDAP is the only authentication backend I plan to provide, but I made sure it's possible to add others if a real-world need arises.
-
-
-### Next steps
-
-There's a long list of improvements lined up for Restagraph; too many to list here. The main priority right now is to finish implementing the login and permissions systems, and give it a more thorough check for security issues, so I can put it online long-term.
-
-As already mentioned, the GUI needs a _lot_ of work, especially with regard to visualising the data.
 
 
 ### What's behind the design decisions
