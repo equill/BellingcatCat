@@ -128,7 +128,7 @@
       "dependent": true,
       "notes": "A comment on any object",
       "attributes": [
-            {
+        {
           "name": "text",
           "description": "The text of the comment",
           "type": "text",
@@ -414,6 +414,37 @@
       "notes": "Comments can be added to anything."
     },
     {
+      "source-type": "any",
+      "name": "RELATES_TO",
+      "target-type": "Topics",
+      "cardinality": "many:many",
+      "notes": "This thing pertains to that topic."
+    },
+    {
+      "source-type": "any",
+      "name": "RELATES_TO",
+      "target-type": "Files",
+      "cardinality": "many:many",
+      "reltype": "any",
+      "notes": null
+    },
+    {
+      "source-type": "any",
+      "name": "RELATES_TO",
+      "target-type": "Wikipages",
+      "cardinality": "many:many",
+      "reltype": "any",
+      "notes": null
+    },
+    {
+      "source-type": "any",
+      "name": "REFERS_TO",
+      "target-type": "Definitions",
+      "cardinality": "many:many",
+      "reltype": "any",
+      "notes": null
+    },
+    {
       "source-type": "Accounts",
       "name": "BELONGS_TO",
       "target-type": "Websites",
@@ -490,38 +521,6 @@
       "cardinality": "many:many",
       "reltype": "any",
       "notes": "This application is what that other one is built on top of."
-    },
-    {
-      "source-type": "Websites",
-      "name": "ACCOUNTS",
-      "target-type": "Accounts",
-      "cardinality": "1:many",
-      "reltype": "dependent",
-      "notes": null
-    },
-    {
-      "source-type": "any",
-      "name": "RELATES_TO",
-      "target-type": "Files",
-      "cardinality": "many:many",
-      "reltype": "any",
-      "notes": null
-    },
-    {
-      "source-type": "any",
-      "name": "RELATES_TO",
-      "target-type": "Wikipages",
-      "cardinality": "many:many",
-      "reltype": "any",
-      "notes": null
-    },
-    {
-      "source-type": "any",
-      "name": "REFERS_TO",
-      "target-type": "Definitions",
-      "cardinality": "many:many",
-      "reltype": "any",
-      "notes": null
     },
     {
       "source-type": "Aliases",
@@ -1552,19 +1551,20 @@
       "notes": "This team is a subteam of that one, and possibly of others."
     },
     {
-      "source-type": "any",
-      "name": "RELATES_TO",
-      "target-type": "Topics",
-      "cardinality": "many:many",
-      "notes": "This thing pertains to that topic."
-    },
-    {
       "source-type": "Topics",
       "name": "SUBJECT_OF",
       "target-type": "any",
       "cardinality": "many:many",
       "reltype": "any",
       "notes": "This is the topic of that thing over there."
+    },
+    {
+      "source-type": "Websites",
+      "name": "ACCOUNTS",
+      "target-type": "Accounts",
+      "cardinality": "1:many",
+      "reltype": "dependent",
+      "notes": null
     },
     {
       "source-type": "Wikipages",
