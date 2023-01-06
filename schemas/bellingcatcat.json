@@ -633,6 +633,12 @@
     {
       "source-type": "Cities",
       "name": "CONTAINS",
+      "target-type": "Places",
+      "notes": "That place is somewhere in this city."
+    },
+    {
+      "source-type": "Cities",
+      "name": "CONTAINS",
       "target-type": "Streets",
       "cardinality": "1:many",
       "reltype": "dependent",
@@ -686,6 +692,12 @@
     },
     {
       "source-type": "Counties",
+      "name": "CONTAINS",
+      "target-type": "Places",
+      "notes": "That place is somewhere in this county, and thus in the country that contains it."
+    },
+    {
+      "source-type": "Counties",
       "name": "LOCATED_IN",
       "target-type": "Countries",
       "cardinality": "many:1",
@@ -707,6 +719,12 @@
       "cardinality": "1:many",
       "reltype": "dependent",
       "notes": "That county lies within this country."
+    },
+    {
+      "source-type": "Countries",
+      "name": "CONTAINS",
+      "target-type": "Places",
+      "notes": "That place is somewhere in this country."
     },
     {
       "source-type": "Countries",
@@ -778,7 +796,7 @@
     },
     {
       "source-type": "Events",
-      "name": "LOCATION",
+      "name": "LOCATED_IN",
       "target-type": "Countries",
       "cardinality": "many:many",
       "reltype": "any",
@@ -786,7 +804,7 @@
     },
     {
       "source-type": "Events",
-      "name": "LOCATION",
+      "name": "LOCATED_IN",
       "target-type": "States",
       "cardinality": "many:many",
       "reltype": "any",
@@ -794,7 +812,7 @@
     },
     {
       "source-type": "Events",
-      "name": "LOCATION",
+      "name": "LOCATED_IN",
       "target-type": "Cities",
       "cardinality": "many:many",
       "reltype": "any",
@@ -802,7 +820,7 @@
     },
     {
       "source-type": "Events",
-      "name": "LOCATION",
+      "name": "LOCATED_IN",
       "target-type": "Places",
       "cardinality": "many:many",
       "reltype": "any",
@@ -923,14 +941,6 @@
       "cardinality": "many:many",
       "reltype": "any",
       "notes": "This investigation makes some kind of reference to that file."
-    },
-    {
-      "source-type": "Places",
-      "name": "HOSTED",
-      "target-type": "Events",
-      "cardinality": "many:many",
-      "dependent": false,
-      "notes": "That event was hosted in this place."
     },
     {
       "source-type": "ModelVersions",
@@ -1476,16 +1486,16 @@
     },
     {
       "source-type": "Places",
-      "name": "LOCATIONS",
-      "target-type": "StreetNumbers",
-      "cardinality": "many:1",
-      "reltype": "any",
-      "notes": null
+      "name": "HOSTED",
+      "target-type": "Events",
+      "cardinality": "many:many",
+      "dependent": false,
+      "notes": "That event was hosted in this place."
     },
     {
       "source-type": "Places",
-      "name": "LOCATIONS",
-      "target-type": "Streets",
+      "name": "LOCATED_AT",
+      "target-type": "StreetNumbers",
       "cardinality": "many:1",
       "reltype": "any",
       "notes": null
@@ -1500,7 +1510,7 @@
     },
     {
       "source-type": "Places",
-      "name": "LOCATIONS",
+      "name": "LOCATED_IN",
       "target-type": "States",
       "cardinality": "many:1",
       "reltype": "any",
@@ -1508,8 +1518,22 @@
     },
     {
       "source-type": "Places",
-      "name": "LOCATIONS",
+      "name": "LOCATED_IN",
+      "target-type": "Counties",
+      "cardinality": "many:1",
+      "notes": "This place is somewhere in that county."
+    },
+    {
+      "source-type": "Places",
+      "name": "LOCATED_IN",
       "target-type": "Countries",
+      "cardinality": "many:1",
+      "notes": "This place is somewhere in that country."
+    },
+    {
+      "source-type": "Places",
+      "name": "LOCATED_IN",
+      "target-type": "Streets",
       "cardinality": "many:1",
       "reltype": "any",
       "notes": null
@@ -1569,6 +1593,12 @@
       "cardinality": "many:1",
       "reltype": "any",
       "notes": null
+    },
+    {
+      "source-type": "Streets",
+      "name": "CONTAINS",
+      "target-type": "Places",
+      "notes": "That place is somewhere on this street."
     },
     {
       "source-type": "Streets",
