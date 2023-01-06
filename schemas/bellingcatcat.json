@@ -137,6 +137,18 @@
       ]
     },
     {
+      "name": "Counties",
+      "dependent": "true",
+      "notes": "Regions within a country, usually a British Commonwealth one.",
+      "attributes": [
+        {
+          "name": "description",
+          "description": "Any useful notes or comments about the county.",
+          "type": "text"
+        }
+      ]
+    },
+    {
       "name": "Countries",
       "dependent": "false",
       "notes": "The geographic kind.",
@@ -484,7 +496,7 @@
     },
     {
       "source-type": "Applications",
-      "name": "IN_CATEGORY",
+      "name": "MEMBER_OF",
       "target-type": "ApplicationCategories",
       "cardinality": "many:many",
       "reltype": "any",
@@ -524,7 +536,7 @@
     },
     {
       "source-type": "Aliases",
-      "name": "ALIAS_FOR",
+      "name": "REFERS_TO",
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
@@ -540,7 +552,7 @@
     },
     {
       "source-type": "Books",
-      "name": "ALSO_PUBLISHED_AS",
+      "name": "SEE_ALSO",
       "target-type": "Aliases",
       "cardinality": "many:many",
       "reltype": "any",
@@ -572,11 +584,11 @@
     },
     {
       "source-type": "Brands",
-      "name": "VENDOR",
+      "name": "OWNED_BY",
       "target-type": "Organisations",
       "cardinality": "many:1",
       "reltype": "any",
-      "notes": null
+      "notes": "This is a brand of that organisation."
     },
     {
       "source-type": "Buildings",
@@ -588,7 +600,7 @@
     },
     {
       "source-type": "Buildings",
-      "name": "FLOORS",
+      "name": "CONTAINS",
       "target-type": "Floors",
       "cardinality": "1:many",
       "reltype": "dependent",
@@ -596,7 +608,7 @@
     },
     {
       "source-type": "Buildings",
-      "name": "LOCATION",
+      "name": "LOCATED_IN",
       "target-type": "Countries",
       "cardinality": "many:1",
       "reltype": "any",
@@ -604,7 +616,7 @@
     },
     {
       "source-type": "Buildings",
-      "name": "LOCATION",
+      "name": "LOCATED_IN",
       "target-type": "States",
       "cardinality": "many:1",
       "reltype": "any",
@@ -612,7 +624,7 @@
     },
     {
       "source-type": "Buildings",
-      "name": "LOCATION",
+      "name": "LOCATED_IN",
       "target-type": "Cities",
       "cardinality": "many:1",
       "reltype": "any",
@@ -620,7 +632,15 @@
     },
     {
       "source-type": "Cities",
-      "name": "POSTCODES",
+      "name": "CONTAINS",
+      "target-type": "Streets",
+      "cardinality": "1:many",
+      "reltype": "dependent",
+      "notes": null
+    },
+    {
+      "source-type": "Cities",
+      "name": "INCLUDES",
       "target-type": "Postcodes",
       "cardinality": "1:many",
       "reltype": "dependent",
@@ -628,11 +648,17 @@
     },
     {
       "source-type": "Cities",
-      "name": "STREETS",
-      "target-type": "Streets",
-      "cardinality": "1:many",
-      "reltype": "dependent",
-      "notes": null
+      "name": "LOCATED_IN",
+      "target-type": "Counties",
+      "cardinality": "many:1",
+      "notes": "This city is found in that county."
+    },
+    {
+      "source-type": "Cities",
+      "name": "LOCATED_IN",
+      "target-type": "Countries",
+      "cardinality": "many:1",
+      "notes": "This city is found in that county."
     },
     {
       "source-type": "Cities",
@@ -659,8 +685,16 @@
       "notes": "That person is known to operate in this city, regardless of whether they live there. Inverse relationship for OPERATES_IN."
     },
     {
+      "source-type": "Counties",
+      "name": "LOCATED_IN",
+      "target-type": "Countries",
+      "cardinality": "many:1",
+      "reltype": "any",
+      "notes": "This county is a region of this country."
+    },
+    {
       "source-type": "Countries",
-      "name": "CITIES",
+      "name": "CONTAINS",
       "target-type": "Cities",
       "cardinality": "1:many",
       "reltype": "dependent",
@@ -668,7 +702,15 @@
     },
     {
       "source-type": "Countries",
-      "name": "POSTCODES",
+      "name": "CONTAINS",
+      "target-type": "Counties",
+      "cardinality": "1:many",
+      "reltype": "dependent",
+      "notes": "That county lies within this country."
+    },
+    {
+      "source-type": "Countries",
+      "name": "INCLUDES",
       "target-type": "Postcodes",
       "cardinality": "1:many",
       "reltype": "dependent",
@@ -676,7 +718,7 @@
     },
     {
       "source-type": "Countries",
-      "name": "STATES",
+      "name": "CONTAINS",
       "target-type": "States",
       "cardinality": "1:many",
       "reltype": "dependent",
@@ -716,11 +758,23 @@
     },
     {
       "source-type": "Events",
+      "name": "ATTENDED_BY",
+      "target-type": "People",
+      "notes": "That person was in the audience in this event. They were not necessarily INVOLVED in it."
+    },
+    {
+      "source-type": "Events",
       "name": "INVOLVED",
       "target-type": "People",
+      "notes": "That person participated in this event. It was not merely ATTENDED_BY them."
+    },
+    {
+      "source-type": "Events",
+      "name": "INVOLVED",
+      "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That person participated in this event."
+      "notes": "That organisation participated in this event."
     },
     {
       "source-type": "Events",
@@ -944,6 +998,12 @@
     },
     {
       "source-type": "Organisations",
+      "name": "PARTICIPATED_IN",
+      "target-type": "Events",
+      "notes": "This organisation participated in that event."
+    },
+    {
+      "source-type": "Organisations",
       "name": "HAS_MEMBERS",
       "target-type": "Organisations",
       "cardinality": "many:many",
@@ -1136,7 +1196,7 @@
     },
     {
       "source-type": "People",
-      "name": "AKA",
+      "name": "SEE_ALSO",
       "target-type": "Aliases",
       "cardinality": "many:many",
       "reltype": "any",
@@ -1148,7 +1208,15 @@
       "target-type": "Events",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": null
+      "notes": "This person was in the audience of that event, as distinguished from having PARTICIPATED_IN it."
+    },
+    {
+      "source-type": "People",
+      "name": "PARTICIPATED_IN",
+      "target-type": "Events",
+      "cardinality": "many:many",
+      "reltype": "any",
+      "notes": "This person took an active role in that event, as distinguished from simply having ATTENDED it."
     },
     {
       "source-type": "People",
@@ -1424,7 +1492,7 @@
     },
     {
       "source-type": "Places",
-      "name": "LOCATIONS",
+      "name": "LOCATED_IN",
       "target-type": "Cities",
       "cardinality": "many:1",
       "reltype": "any",
@@ -1456,7 +1524,7 @@
     },
     {
       "source-type": "States",
-      "name": "CITIES",
+      "name": "CONTAINS",
       "target-type": "Cities",
       "cardinality": "1:many",
       "reltype": "dependent",
