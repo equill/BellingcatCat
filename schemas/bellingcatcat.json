@@ -647,6 +647,18 @@
       "notes": null
     },
     {
+      "source-type": "Buildings",
+      "name": "LOCATED_IN",
+      "target-type": "Places",
+      "cardinality": "many:1",
+      "notes": "Sometimes a building's location is best described this way, especially when the place itself is notable."
+    },
+    {
+      "source-type": "Buildings",
+      "name": "LOCATION_OF",
+      "target-type": "Events"
+    },
+    {
       "source-type": "Cities",
       "name": "CONTAINS",
       "target-type": "Places",
@@ -813,18 +825,9 @@
     {
       "source-type": "Events",
       "name": "LOCATED_IN",
-      "target-type": "Countries",
-      "cardinality": "many:many",
-      "reltype": "any",
-      "notes": null
-    },
-    {
-      "source-type": "Events",
-      "name": "LOCATED_IN",
-      "target-type": "States",
-      "cardinality": "many:many",
-      "reltype": "any",
-      "notes": null
+      "target-type": "Buildings",
+      "cardinality": "many:1",
+      "reltype": "any"
     },
     {
       "source-type": "Events",
@@ -837,7 +840,23 @@
     {
       "source-type": "Events",
       "name": "LOCATED_IN",
+      "target-type": "Countries",
+      "cardinality": "many:many",
+      "reltype": "any",
+      "notes": null
+    },
+    {
+      "source-type": "Events",
+      "name": "LOCATED_IN",
       "target-type": "Places",
+      "cardinality": "many:many",
+      "reltype": "any",
+      "notes": null
+    },
+    {
+      "source-type": "Events",
+      "name": "LOCATED_IN",
+      "target-type": "States",
       "cardinality": "many:many",
       "reltype": "any",
       "notes": null
@@ -1553,6 +1572,14 @@
       "cardinality": "many:1",
       "reltype": "any",
       "notes": null
+    },
+    {
+      "source-type": "Places",
+      "name": "LOCATION_OF",
+      "target-type": "Buildings",
+      "reltype": "any",
+      "cardinality": "1:many",
+      "notes": "Sometimes this is the best way of identifying a building's location."
     },
     {
       "source-type": "PostboxAddresses",
