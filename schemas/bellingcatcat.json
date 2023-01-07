@@ -275,6 +275,22 @@
       ]
     },
     {
+      "name": "People",
+      "description": "Additional attributes for the base resourcetype.",
+      "attributes": [
+        {
+          "name": "YearOfBirth",
+          "description": "The year in which this person was born.",
+          "type": "integer"
+        },
+        {
+          "name": "YearOfDeath",
+          "description": "The year in which this person died.",
+          "type": "integer"
+        }
+      ]
+    },
+    {
       "name": "PhoneNumbers",
       "dependent": "false",
       "description": "",
