@@ -21,7 +21,7 @@
     {
       "name": "Aliases",
       "dependent": false,
-      "notes": "Another name by which someone or something is known.",
+      "description": "Another name by which someone or something is known.",
       "attributes": [
         {
           "name": "description",
@@ -33,7 +33,7 @@
     {
       "name": "Applications",
       "dependent": false,
-      "notes": "Software applications",
+      "description": "Software applications",
       "attributes": [
         {
           "name": "Notes",
@@ -55,7 +55,7 @@
     {
       "name": "ApplicationCategories",
       "dependent": false,
-      "notes": "Wiki, accounting, social media, etc. Independent of topic.",
+      "description": "Wiki, accounting, social media, etc. Independent of topic.",
       "attributes": [
         {
           "name": "Notes",
@@ -67,7 +67,7 @@
     {
       "name": "Books",
       "dependent": false,
-      "notes": "Stuff printed on the flayed corpses of trees.",
+      "description": "Stuff printed on the flayed corpses of trees.",
       "attributes": [
         {
           "name": "description",
@@ -96,7 +96,7 @@
     {
       "name": "Brands",
       "dependent": "false",
-      "notes": "Also known as ´make´.",
+      "description": "Also known as ´make´.",
       "attributes": [
         {
           "name": "description",
@@ -108,7 +108,7 @@
     {
       "name": "Buildings",
       "dependent": "false",
-      "notes": "Individual buildings.",
+      "description": "Individual buildings.",
       "attributes": [
         {
           "name": "description",
@@ -120,13 +120,13 @@
     {
       "name": "Cities",
       "dependent": true,
-      "notes": "The geographic kind.",
+      "description": "The geographic kind.",
       "attributes": null
     },
     {
       "name": "Comments",
       "dependent": true,
-      "notes": "A comment on any object",
+      "description": "A comment on any object",
       "attributes": [
         {
           "name": "text",
@@ -139,7 +139,7 @@
     {
       "name": "Counties",
       "dependent": "true",
-      "notes": "Regions within a country, usually a British Commonwealth one.",
+      "description": "Regions within a country, usually a British Commonwealth one.",
       "attributes": [
         {
           "name": "description",
@@ -151,13 +151,13 @@
     {
       "name": "Countries",
       "dependent": "false",
-      "notes": "The geographic kind.",
+      "description": "The geographic kind.",
       "attributes": null
     },
     {
       "name": "Definitions",
       "dependent": false,
-      "notes": "Definition of a word, phrase, abbreviation or acronym.",
+      "description": "Definition of a word, phrase, abbreviation or acronym.",
       "attributes": [
         {
           "name": "description",
@@ -169,7 +169,7 @@
     {
       "name": "EmailAddresses",
       "dependent": true,
-      "notes": "",
+      "description": "",
       "attributes": [
         {
           "name": "description",
@@ -181,7 +181,7 @@
     {
       "name": "Events",
       "dependent": "false",
-      "notes": "Things that happened.",
+      "description": "Things that happened.",
       "attributes": [
         {
           "name": "title",
@@ -211,7 +211,7 @@
     {
       "name": "Floors",
       "dependent": true,
-      "notes": "Floors within a building.",
+      "description": "Floors within a building.",
       "attributes": [
         {
           "name": "description",
@@ -223,7 +223,7 @@
     {
       "name": "Howtos",
       "dependent": false,
-      "notes": "Instructions for how to do something.",
+      "description": "Instructions for how to do something.",
       "attributes": [
         {
           "name": "instructions",
@@ -235,7 +235,7 @@
     {
       "name": "Investigations",
       "dependent": false,
-      "notes": "An investigation into something that happened.",
+      "description": "An investigation into something that happened.",
       "attributes": [
         {
           "name": "Summary",
@@ -253,7 +253,7 @@
     {
       "name": "Movements",
       "dependent": false,
-      "notes": "Emergent phenomena that aren't connected/formal enough to be called an organisation.",
+      "description": "Emergent phenomena that aren't connected/formal enough to be called an organisation.",
       "attributes": [
         {
           "name": "description",
@@ -265,7 +265,7 @@
     {
       "name": "OrganisationCategories",
       "dependent": false,
-      "notes": "Denote what _kind_ of organisation it is: recording studio, zoo, sports club, etc.",
+      "description": "Denote what _kind_ of organisation it is: recording studio, zoo, sports club, etc.",
       "attributes": [
         {
           "name": "description",
@@ -277,7 +277,7 @@
     {
       "name": "PhoneNumbers",
       "dependent": "false",
-      "notes": "",
+      "description": "",
       "attributes": [
         {
           "name": "description",
@@ -289,7 +289,7 @@
     {
       "name": "Places",
       "dependent": "false",
-      "notes": "The generic idea of a specific place, independent of its geographical location. E.g, an office or somebody's home.",
+      "description": "The generic idea of a specific place, independent of its geographical location. E.g, an office or somebody's home.",
       "attributes": [
         {
           "name": "description",
@@ -301,19 +301,19 @@
     {
       "name": "PostboxAddresses",
       "dependent": "false",
-      "notes": "The UID is the PO Box number.",
+      "description": "The UID is the PO Box number.",
       "attributes": null
     },
     {
       "name": "Postcodes",
       "dependent": "false",
-      "notes": "What else does this need?",
+      "description": "What else does this need?",
       "attributes": null
     },
     {
       "name": "Roles",
       "dependent": true,
-      "notes": "Organisation roles. These are dependent because they exist only in the context of an organisation.",
+      "description": "Organisation roles. These are dependent because they exist only in the context of an organisation.",
       "attributes": [
         {
           "name": "description",
@@ -325,13 +325,13 @@
     {
       "name": "States",
       "dependent": true,
-      "notes": "The geographic kind.",
+      "description": "The geographic kind.",
       "attributes": null
     },
     {
       "name": "StreetNumbers",
       "dependent": true,
-      "notes": "The UID is the street number",
+      "description": "The UID is the street number",
       "attributes": [
         {
           "name": "floor",
@@ -348,13 +348,13 @@
     {
       "name": "Streets",
       "dependent": true,
-      "notes": "",
+      "description": "",
       "attributes": null
     },
     {
       "name": "Teams",
       "dependent": true,
-      "notes": "Unit of organisation within an Organisation. You _could_ just use Organisations for this, but that way lie name-collisions.",
+      "description": "Unit of organisation within an Organisation. You _could_ just use Organisations for this, but that way lie name-collisions.",
       "attributes": [
         {
           "name": "FullName",
@@ -372,7 +372,7 @@
     {
       "name": "Topics",
       "dependent": false,
-      "notes": "A specific subject, that things can be said to relate to.",
+      "description": "A specific subject, that things can be said to relate to.",
       "attributes": [
         {
           "name": "Notes",
@@ -384,7 +384,7 @@
     {
       "name": "Websites",
       "dependent": "false",
-      "notes": "",
+      "description": "",
       "attributes": [
         {
           "name": "url",
@@ -401,7 +401,7 @@
     {
       "name": "Wikipages",
       "dependent": "false",
-      "notes": "generic wikipage",
+      "description": "generic wikipage",
       "attributes": [
         {
           "name": "title",
@@ -423,14 +423,14 @@
       "target-type": "Comments",
       "cardinality": "1:many",
       "reltype": "dependent",
-      "notes": "Comments can be added to anything."
+      "description": "Comments can be added to anything."
     },
     {
       "source-type": "any",
       "name": "RELATES_TO",
       "target-type": "Topics",
       "cardinality": "many:many",
-      "notes": "This thing pertains to that topic."
+      "description": "This thing pertains to that topic."
     },
     {
       "source-type": "any",
@@ -470,7 +470,7 @@
       "target-type": "Applications",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This category includes that application."
+      "description": "This category includes that application."
     },
     {
       "source-type": "Applications",
@@ -478,13 +478,13 @@
       "target-type": "Applications",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This app is built on top of that one's functionality. One app may be built on top of several others, and by their powers combined become some kind of giant super-app."
+      "description": "This app is built on top of that one's functionality. One app may be built on top of several others, and by their powers combined become some kind of giant super-app."
     },
     {
       "source-type": "Applications",
       "name": "DOCUMENTED_BY",
       "target-type": "Howtos",
-      "notes": "Some aspect of this application is documented by that HOWTO."
+      "description": "Some aspect of this application is documented by that HOWTO."
     },
     {
       "source-type": "Applications",
@@ -492,7 +492,7 @@
       "target-type": "Wikipages",
       "cardinality": "1:many",
       "reltype": "any",
-      "notes": "Some aspect of this application is documented by that wikipage."
+      "description": "Some aspect of this application is documented by that wikipage."
     },
     {
       "source-type": "Applications",
@@ -500,7 +500,7 @@
       "target-type": "ApplicationCategories",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This application fits into that category."
+      "description": "This application fits into that category."
     },
     {
       "source-type": "Applications",
@@ -508,7 +508,7 @@
       "target-type": "Organisations",
       "cardinality": "many:1",
       "reltype": "any",
-      "notes": "That organisation is the current vendor and/or maintainer of this app."
+      "description": "That organisation is the current vendor and/or maintainer of this app."
     },
     {
       "source-type": "Applications",
@@ -516,7 +516,7 @@
       "target-type": "People",
       "cardinality": "many:1",
       "reltype": "any",
-      "notes": "That person is the current maintainer of this app."
+      "description": "That person is the current maintainer of this app."
     },
     {
       "source-type": "Applications",
@@ -524,7 +524,7 @@
       "target-type": "Teams",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This application is produced by that team in particular."
+      "description": "This application is produced by that team in particular."
     },
     {
       "source-type": "Applications",
@@ -532,7 +532,7 @@
       "target-type": "Applications",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This application is what that other one is built on top of."
+      "description": "This application is what that other one is built on top of."
     },
     {
       "source-type": "Aliases",
@@ -540,7 +540,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This alias has been associated with this person. Note that multiple people may use the same alias, whether coincidentally or intentionally."
+      "description": "This alias has been associated with this person. Note that multiple people may use the same alias, whether coincidentally or intentionally."
     },
     {
       "source-type": "Books",
@@ -548,7 +548,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Link from the book to its author."
+      "description": "Link from the book to its author."
     },
     {
       "source-type": "Books",
@@ -564,7 +564,7 @@
       "target-type": "Organisations",
       "cardinality": "many:1",
       "reltype": "any",
-      "notes": "This book was published by that organisation."
+      "description": "This book was published by that organisation."
     },
     {
       "source-type": "Books",
@@ -572,7 +572,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person thought that book would be worth reading or consulting."
+      "description": "This person thought that book would be worth reading or consulting."
     },
     {
       "source-type": "Brands",
@@ -588,7 +588,7 @@
       "target-type": "Organisations",
       "cardinality": "many:1",
       "reltype": "any",
-      "notes": "This is a brand of that organisation."
+      "description": "This is a brand of that organisation."
     },
     {
       "source-type": "Buildings",
@@ -634,7 +634,7 @@
       "source-type": "Cities",
       "name": "CONTAINS",
       "target-type": "Places",
-      "notes": "That place is somewhere in this city."
+      "description": "That place is somewhere in this city."
     },
     {
       "source-type": "Cities",
@@ -657,14 +657,14 @@
       "name": "LOCATED_IN",
       "target-type": "Counties",
       "cardinality": "many:1",
-      "notes": "This city is found in that county."
+      "description": "This city is found in that county."
     },
     {
       "source-type": "Cities",
       "name": "LOCATED_IN",
       "target-type": "Countries",
       "cardinality": "many:1",
-      "notes": "This city is found in that county."
+      "description": "This city is found in that county."
     },
     {
       "source-type": "Cities",
@@ -672,7 +672,7 @@
       "target-type": "Events",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That event was reported to occur in this city."
+      "description": "That event was reported to occur in this city."
     },
     {
       "source-type": "Cities",
@@ -680,7 +680,7 @@
       "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That organisation is known to operate in this city, regardless of any presence there. Inverse relationship for OPERATES_IN."
+      "description": "That organisation is known to operate in this city, regardless of any presence there. Inverse relationship for OPERATES_IN."
     },
     {
       "source-type": "Cities",
@@ -688,13 +688,13 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That person is known to operate in this city, regardless of whether they live there. Inverse relationship for OPERATES_IN."
+      "description": "That person is known to operate in this city, regardless of whether they live there. Inverse relationship for OPERATES_IN."
     },
     {
       "source-type": "Counties",
       "name": "CONTAINS",
       "target-type": "Places",
-      "notes": "That place is somewhere in this county, and thus in the country that contains it."
+      "description": "That place is somewhere in this county, and thus in the country that contains it."
     },
     {
       "source-type": "Counties",
@@ -702,7 +702,7 @@
       "target-type": "Countries",
       "cardinality": "many:1",
       "reltype": "any",
-      "notes": "This county is a region of this country."
+      "description": "This county is a region of this country."
     },
     {
       "source-type": "Countries",
@@ -718,13 +718,13 @@
       "target-type": "Counties",
       "cardinality": "1:many",
       "reltype": "dependent",
-      "notes": "That county lies within this country."
+      "description": "That county lies within this country."
     },
     {
       "source-type": "Countries",
       "name": "CONTAINS",
       "target-type": "Places",
-      "notes": "That place is somewhere in this country."
+      "description": "That place is somewhere in this country."
     },
     {
       "source-type": "Countries",
@@ -748,7 +748,7 @@
       "target-type": "Events",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That event was reported to occur in this country."
+      "description": "That event was reported to occur in this country."
     },
     {
       "source-type": "Countries",
@@ -756,7 +756,7 @@
       "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That organisation is known to operate in this country, regardless of any presence there. Inverse relationship for OPERATES_IN."
+      "description": "That organisation is known to operate in this country, regardless of any presence there. Inverse relationship for OPERATES_IN."
     },
     {
       "source-type": "Countries",
@@ -764,7 +764,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That person is known to operate in this country, regardless of whether they live there. Inverse relationship for OPERATES_IN."
+      "description": "That person is known to operate in this country, regardless of whether they live there. Inverse relationship for OPERATES_IN."
     },
     {
       "source-type": "Events",
@@ -772,19 +772,19 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This event happened to or for that person."
+      "description": "This event happened to or for that person."
     },
     {
       "source-type": "Events",
       "name": "ATTENDED_BY",
       "target-type": "People",
-      "notes": "That person was in the audience in this event. They were not necessarily INVOLVED in it."
+      "description": "That person was in the audience in this event. They were not necessarily INVOLVED in it."
     },
     {
       "source-type": "Events",
       "name": "INVOLVED",
       "target-type": "People",
-      "notes": "That person participated in this event. It was not merely ATTENDED_BY them."
+      "description": "That person participated in this event. It was not merely ATTENDED_BY them."
     },
     {
       "source-type": "Events",
@@ -792,7 +792,7 @@
       "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That organisation participated in this event."
+      "description": "That organisation participated in this event."
     },
     {
       "source-type": "Events",
@@ -832,7 +832,7 @@
       "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That organisation was involved in organising this event."
+      "description": "That organisation was involved in organising this event."
     },
     {
       "source-type": "Events",
@@ -840,7 +840,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That person was involved in organising this event."
+      "description": "That person was involved in organising this event."
     },
     {
       "source-type": "Events",
@@ -848,7 +848,7 @@
       "target-type": "Investigations",
       "cardinality": "1:many",
       "reltype": "any",
-      "notes": "That investigation is about this specific event."
+      "description": "That investigation is about this specific event."
     },
     {
       "source-type": "Files",
@@ -856,7 +856,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That person wrote the content in this file."
+      "description": "That person wrote the content in this file."
     },
     {
       "source-type": "Files",
@@ -864,7 +864,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That person drew this picture."
+      "description": "That person drew this picture."
     },
     {
       "source-type": "Files",
@@ -872,7 +872,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That person is a subject of this (presumably image) file."
+      "description": "That person is a subject of this (presumably image) file."
     },
     {
       "source-type": "Files",
@@ -880,7 +880,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That person took this photograph."
+      "description": "That person took this photograph."
     },
     {
       "source-type": "Files",
@@ -888,19 +888,19 @@
       "target-type": "Investigations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That investigation made some reference to this file."
+      "description": "That investigation made some reference to this file."
     },
     {
       "source-type": "Howtos",
       "name": "DOCUMENTS",
       "target-type": "Applications",
-      "notes": "This HOWTO documents some aspect of that application."
+      "description": "This HOWTO documents some aspect of that application."
     },
     {
       "source-type": "Howtos",
       "name": "RELATES_TO",
       "target-type": "Howtos",
-      "notes": "These HOWTOs are related."
+      "description": "These HOWTOs are related."
     },
     {
       "source-type": "Investigations",
@@ -908,7 +908,7 @@
       "target-type": "Events",
       "cardinality": "many:1",
       "reltype": "any",
-      "notes": "This investigation is specifically about that one event."
+      "description": "This investigation is specifically about that one event."
     },
     {
       "source-type": "Investigations",
@@ -916,7 +916,7 @@
       "target-type": "Aliases",
       "cardinality": "many:1",
       "reltype": "any",
-      "notes": "A person using that alias is a focus of this investigation."
+      "description": "A person using that alias is a focus of this investigation."
     },
     {
       "source-type": "Investigations",
@@ -924,7 +924,7 @@
       "target-type": "People",
       "cardinality": "many:1",
       "reltype": "any",
-      "notes": "That person is a focus of this investigation."
+      "description": "That person is a focus of this investigation."
     },
     {
       "source-type": "Investigations",
@@ -932,7 +932,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This investigation was (or is being) pursued by that person."
+      "description": "This investigation was (or is being) pursued by that person."
     },
     {
       "source-type": "Investigations",
@@ -940,7 +940,7 @@
       "target-type": "Files",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This investigation makes some kind of reference to that file."
+      "description": "This investigation makes some kind of reference to that file."
     },
     {
       "source-type": "ModelVersions",
@@ -956,7 +956,7 @@
       "target-type": "Movements",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Uncomfortably vague, so should be used only where the relationship is not clear."
+      "description": "Uncomfortably vague, so should be used only where the relationship is not clear."
     },
     {
       "source-type": "Movements",
@@ -964,7 +964,7 @@
       "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Uncomfortably vague, so should be used only where the relationship is not clear."
+      "description": "Uncomfortably vague, so should be used only where the relationship is not clear."
     },
     {
       "source-type": "Movements",
@@ -972,7 +972,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Uncomfortably vague, so should be used only where the relationship is not clear."
+      "description": "Uncomfortably vague, so should be used only where the relationship is not clear."
     },
     {
       "source-type": "OrganisationCategories",
@@ -980,7 +980,7 @@
       "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Cardinality is many:many because it's plausible that one org fits multiple categories."
+      "description": "Cardinality is many:many because it's plausible that one org fits multiple categories."
     },
     {
       "source-type": "Organisations",
@@ -1004,13 +1004,13 @@
       "target-type": "Teams",
       "cardinality": "1:many",
       "reltype": "dependent",
-      "notes": "That team is a member of this organisation."
+      "description": "That team is a member of this organisation."
     },
     {
       "source-type": "Organisations",
       "name": "PARTICIPATED_IN",
       "target-type": "Events",
-      "notes": "This organisation participated in that event."
+      "description": "This organisation participated in that event."
     },
     {
       "source-type": "Organisations",
@@ -1018,7 +1018,7 @@
       "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "E.g, that commercial landlord is a member of this VvE."
+      "description": "E.g, that commercial landlord is a member of this VvE."
     },
     {
       "source-type": "Organisations",
@@ -1026,7 +1026,7 @@
       "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "E.g, this commercial landlord is a member of that VvE."
+      "description": "E.g, this commercial landlord is a member of that VvE."
     },
     {
       "source-type": "Organisations",
@@ -1034,7 +1034,7 @@
       "target-type": "Events",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This organisation made that event happen."
+      "description": "This organisation made that event happen."
     },
     {
       "source-type": "Organisations",
@@ -1050,7 +1050,7 @@
       "target-type": "Books",
       "cardinality": "1:many",
       "reltype": "any",
-      "notes": "This organisation published that book."
+      "description": "This organisation published that book."
     },
     {
       "source-type": "Organisations",
@@ -1066,7 +1066,7 @@
       "target-type": "Countries",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This organisation is known to do business or otherwise actively do stuff in this country, regardless of any presence there. Inverse relationship for VENUE_FOR."
+      "description": "This organisation is known to do business or otherwise actively do stuff in this country, regardless of any presence there. Inverse relationship for VENUE_FOR."
     },
     {
       "source-type": "Organisations",
@@ -1074,7 +1074,7 @@
       "target-type": "States",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This organisation is known to do business or otherwise actively do stuff in this state, regardless of any presence there. Inverse relationship for VENUE_FOR."
+      "description": "This organisation is known to do business or otherwise actively do stuff in this state, regardless of any presence there. Inverse relationship for VENUE_FOR."
     },
     {
       "source-type": "Organisations",
@@ -1082,7 +1082,7 @@
       "target-type": "Cities",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This organisation is known to do business or otherwise actively do stuff in this city, regardless of any presence there. Inverse relationship for VENUE_FOR."
+      "description": "This organisation is known to do business or otherwise actively do stuff in this city, regardless of any presence there. Inverse relationship for VENUE_FOR."
     },
     {
       "source-type": "Organisations",
@@ -1098,7 +1098,7 @@
       "target-type": "OrganisationCategories",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This org is of that type/those types."
+      "description": "This org is of that type/those types."
     },
     {
       "source-type": "Organisations",
@@ -1114,7 +1114,7 @@
       "target-type": "Movements",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Uncomfortably vague, so should be used only where the relationship is not clear."
+      "description": "Uncomfortably vague, so should be used only where the relationship is not clear."
     },
     {
       "source-type": "Organisations",
@@ -1122,7 +1122,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Uncomfortably vague, so should be used only where the relationship is not clear."
+      "description": "Uncomfortably vague, so should be used only where the relationship is not clear."
     },
     {
       "source-type": "Organisations",
@@ -1130,7 +1130,7 @@
       "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Uncomfortably vague, so should be used only where the relationship is not clear."
+      "description": "Uncomfortably vague, so should be used only where the relationship is not clear."
     },
     {
       "source-type": "Organisations",
@@ -1138,7 +1138,7 @@
       "target-type": "Applications",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This organisation sells and/or maintains that application."
+      "description": "This organisation sells and/or maintains that application."
     },
     {
       "source-type": "People",
@@ -1146,7 +1146,7 @@
       "target-type": "Movements",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Uncomfortably vague, so should be used only where the relationship is not clear."
+      "description": "Uncomfortably vague, so should be used only where the relationship is not clear."
     },
     {
       "source-type": "People",
@@ -1154,7 +1154,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Uncomfortably vague, so should be used only where the relationship is not clear."
+      "description": "Uncomfortably vague, so should be used only where the relationship is not clear."
     },
     {
       "source-type": "People",
@@ -1162,7 +1162,7 @@
       "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Uncomfortably vague, so should be used only where the relationship is not clear."
+      "description": "Uncomfortably vague, so should be used only where the relationship is not clear."
     },
     {
       "source-type": "People",
@@ -1170,7 +1170,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "These people are (or were) business partners."
+      "description": "These people are (or were) business partners."
     },
     {
       "source-type": "People",
@@ -1178,7 +1178,7 @@
       "target-type": "Teams",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person is a member of that team, and possibly of others."
+      "description": "This person is a member of that team, and possibly of others."
     },
     {
       "source-type": "People",
@@ -1186,7 +1186,7 @@
       "target-type": "Applications",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person maintains that application."
+      "description": "This person maintains that application."
     },
     {
       "source-type": "People",
@@ -1194,7 +1194,7 @@
       "target-type": "Books",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "Link to a book this person wrote."
+      "description": "Link to a book this person wrote."
     },
     {
       "source-type": "People",
@@ -1218,7 +1218,7 @@
       "target-type": "Events",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person was in the audience of that event, as distinguished from having PARTICIPATED_IN it."
+      "description": "This person was in the audience of that event, as distinguished from having PARTICIPATED_IN it."
     },
     {
       "source-type": "People",
@@ -1226,7 +1226,7 @@
       "target-type": "Events",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person took an active role in that event, as distinguished from simply having ATTENDED it."
+      "description": "This person took an active role in that event, as distinguished from simply having ATTENDED it."
     },
     {
       "source-type": "People",
@@ -1250,7 +1250,7 @@
       "target-type": "EmailAddresses",
       "cardinality": "1:many",
       "reltype": "dependent",
-      "notes": "An email address at which you can reach this person."
+      "description": "An email address at which you can reach this person."
     },
     {
       "source-type": "People",
@@ -1258,7 +1258,7 @@
       "target-type": "PhoneNumbers",
       "cardinality": "1:many",
       "reltype": "dependent",
-      "notes": "A phone number at which you can reach this person."
+      "description": "A phone number at which you can reach this person."
     },
     {
       "source-type": "People",
@@ -1282,7 +1282,7 @@
       "target-type": "Files",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person wrote the content in this file."
+      "description": "This person wrote the content in this file."
     },
     {
       "source-type": "People",
@@ -1290,7 +1290,7 @@
       "target-type": "Files",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person drew that picture."
+      "description": "This person drew that picture."
     },
     {
       "source-type": "People",
@@ -1306,7 +1306,7 @@
       "target-type": "Events",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person participated in that event."
+      "description": "This person participated in that event."
     },
     {
       "source-type": "People",
@@ -1346,7 +1346,7 @@
       "target-type": "Countries",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person is known to do business or otherwise actively do stuff in this country, regardless of whether they actually live there. Inverse relationship for VENUE_FOR."
+      "description": "This person is known to do business or otherwise actively do stuff in this country, regardless of whether they actually live there. Inverse relationship for VENUE_FOR."
     },
     {
       "source-type": "People",
@@ -1354,7 +1354,7 @@
       "target-type": "States",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person is known to do business or otherwise actively do stuff in this state, regardless of whether they actually live there. Inverse relationship for VENUE_FOR."
+      "description": "This person is known to do business or otherwise actively do stuff in this state, regardless of whether they actually live there. Inverse relationship for VENUE_FOR."
     },
     {
       "source-type": "People",
@@ -1362,7 +1362,7 @@
       "target-type": "Cities",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person is known to do business or otherwise actively do stuff in this city, regardless of whether they actually live there. Inverse relationship for VENUE_FOR."
+      "description": "This person is known to do business or otherwise actively do stuff in this city, regardless of whether they actually live there. Inverse relationship for VENUE_FOR."
     },
     {
       "source-type": "People",
@@ -1370,7 +1370,7 @@
       "target-type": "Events",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person made that event happen."
+      "description": "This person made that event happen."
     },
     {
       "source-type": "People",
@@ -1402,7 +1402,7 @@
       "target-type": "Files",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person took that photograph."
+      "description": "This person took that photograph."
     },
     {
       "source-type": "People",
@@ -1410,7 +1410,7 @@
       "target-type": "Investigations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person pursued, or is currently pursuing, that investigation."
+      "description": "This person pursued, or is currently pursuing, that investigation."
     },
     {
       "source-type": "People",
@@ -1418,7 +1418,7 @@
       "target-type": "Books",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person recommended that book."
+      "description": "This person recommended that book."
     },
     {
       "source-type": "People",
@@ -1442,7 +1442,7 @@
       "target-type": "Events",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That event happened to or for this person."
+      "description": "That event happened to or for this person."
     },
     {
       "source-type": "Aliases",
@@ -1450,7 +1450,7 @@
       "target-type": "Investigations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "A person using this alias is a focus of that investigation."
+      "description": "A person using this alias is a focus of that investigation."
     },
     {
       "source-type": "People",
@@ -1458,7 +1458,7 @@
       "target-type": "Investigations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person is a focus of that investigation."
+      "description": "This person is a focus of that investigation."
     },
     {
       "source-type": "People",
@@ -1466,7 +1466,7 @@
       "target-type": "Files",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This person is a subject of that (presumably image) file."
+      "description": "This person is a subject of that (presumably image) file."
     },
     {
       "source-type": "People",
@@ -1490,7 +1490,7 @@
       "target-type": "Events",
       "cardinality": "many:many",
       "dependent": false,
-      "notes": "That event was hosted in this place."
+      "description": "That event was hosted in this place."
     },
     {
       "source-type": "Places",
@@ -1521,14 +1521,14 @@
       "name": "LOCATED_IN",
       "target-type": "Counties",
       "cardinality": "many:1",
-      "notes": "This place is somewhere in that county."
+      "description": "This place is somewhere in that county."
     },
     {
       "source-type": "Places",
       "name": "LOCATED_IN",
       "target-type": "Countries",
       "cardinality": "many:1",
-      "notes": "This place is somewhere in that country."
+      "description": "This place is somewhere in that country."
     },
     {
       "source-type": "Places",
@@ -1568,7 +1568,7 @@
       "target-type": "Events",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That event was reported to occur in this state."
+      "description": "That event was reported to occur in this state."
     },
     {
       "source-type": "States",
@@ -1576,7 +1576,7 @@
       "target-type": "Organisations",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That organisation is known to operate in this state, regardless of any presence there. Inverse relationship for OPERATES_IN."
+      "description": "That organisation is known to operate in this state, regardless of any presence there. Inverse relationship for OPERATES_IN."
     },
     {
       "source-type": "States",
@@ -1584,7 +1584,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That person is known to operate in this state, regardless of whether they live there. Inverse relationship for OPERATES_IN."
+      "description": "That person is known to operate in this state, regardless of whether they live there. Inverse relationship for OPERATES_IN."
     },
     {
       "source-type": "StreetNumbers",
@@ -1598,7 +1598,7 @@
       "source-type": "Streets",
       "name": "CONTAINS",
       "target-type": "Places",
-      "notes": "That place is somewhere on this street."
+      "description": "That place is somewhere on this street."
     },
     {
       "source-type": "Streets",
@@ -1614,7 +1614,7 @@
       "target-type": "Organisations",
       "cardinality": "many:1",
       "reltype": "any",
-      "notes": "This team is a member of that organisation."
+      "description": "This team is a member of that organisation."
     },
     {
       "source-type": "Teams",
@@ -1622,7 +1622,7 @@
       "target-type": "People",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "That person is a member of this team, and possibly also of others."
+      "description": "That person is a member of this team, and possibly also of others."
     },
     {
       "source-type": "Teams",
@@ -1630,7 +1630,7 @@
       "target-type": "Teams",
       "cardinality": "1:many",
       "reltype": "dependent",
-      "notes": "That team is a subteam of this one, and possibly of others."
+      "description": "That team is a subteam of this one, and possibly of others."
     },
     {
       "source-type": "Teams",
@@ -1638,7 +1638,7 @@
       "target-type": "Applications",
       "cardinality": "1:many",
       "reltype": "any",
-      "notes": "This team in in particular is responsible for maintaining that application."
+      "description": "This team in in particular is responsible for maintaining that application."
     },
     {
       "source-type": "Teams",
@@ -1646,7 +1646,7 @@
       "target-type": "Teams",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This team is a subteam of that one, and possibly of others."
+      "description": "This team is a subteam of that one, and possibly of others."
     },
     {
       "source-type": "Topics",
@@ -1654,7 +1654,7 @@
       "target-type": "any",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This is the topic of that thing over there."
+      "description": "This is the topic of that thing over there."
     },
     {
       "source-type": "Websites",
@@ -1670,7 +1670,7 @@
       "target-type": "Applications",
       "cardinality": "many:1",
       "reltype": "any",
-      "notes": "This wikipage documents some aspect of that application."
+      "description": "This wikipage documents some aspect of that application."
     },
     {
       "source-type": "Wikipages",
@@ -1686,7 +1686,7 @@
       "target-type": "Books",
       "cardinality": "many:many",
       "reltype": "any",
-      "notes": "This wikipage refers to that book in some way."
+      "description": "This wikipage refers to that book in some way."
     }
   ]
 }
